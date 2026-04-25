@@ -12,3 +12,4 @@ models/
 *.log
 .DS_Store
 Thumbs.db
+archive.zip

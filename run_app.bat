@@ -6,12 +6,11 @@ echo   Emotion Recognition - Web Interface
 echo ========================================
 echo.
 
-py -3.11 -c "import streamlit" 2>nul
+python -c "import streamlit" 2>nul
 if errorlevel 1 (
-    echo Streamlit not installed!
-    echo Please run setup.bat first to install dependencies.
-    pause
-    exit /b 1
+    echo Installing required packages...
+    pip install streamlit librosa scikit-learn soundfile numpy scipy pandas matplotlib tqdm
+    echo.
 )
 
 echo Starting Streamlit web interface...
@@ -19,4 +18,6 @@ echo If this doesn't open automatically,
 echo go to: http://localhost:8501
 echo.
 
-py -3.11 -m streamlit run app.py
+streamlit run app.py
+
+pause
