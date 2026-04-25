@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pkl
+*.h5
+*.keras
+*.weights.h5
+.env
+venv/
+data/raw/
+models/
+*.log
+.DS_Store
+Thumbs.db
